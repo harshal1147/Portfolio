@@ -290,6 +290,8 @@ body {
 .project-chat .project-visual { background: linear-gradient(132deg, #152b43 0 55%, #234437 55% 72%, #111a32 72%); }
 .project-books .project-visual { background: linear-gradient(132deg, #32264e 0 54%, #65334d 54% 72%, #17192f 72%); }
 .project-jewellery .project-visual { background: linear-gradient(132deg, #253148 0 55%, #5a4635 55% 72%, #171b31 72%); }
+.project-care .project-visual { background: linear-gradient(132deg, #173143 0 52%, #3a4d35 52% 72%, #121b30 72%); }
+.project-care .visual-glyph { background: linear-gradient(145deg, #789b3d, #247f89); }
 .project-visual::before { content: ''; position: absolute; top: 17px; right: 17px; width: 31px; height: 31px; border-top: 1px solid #d1f36c; border-right: 1px solid #d1f36c; }
 .visual-topline { color: #aeb8d1; }
 .visual-screen { border: 1px solid #354267; background: linear-gradient(145deg, #17203c, #11182f); box-shadow: 0 15px 38px #02040d75; }

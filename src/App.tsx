@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowUpRight, Braces, Github, Globe2, GraduationCap, Mail, Menu, Smartphone, X } from 'lucide-react'
+import { ArrowDown, ArrowUpRight, Braces, Github, Globe2, GraduationCap, HeartHandshake, Mail, Menu, Smartphone, X } from 'lucide-react'
 import { useState } from 'react'
 
 const skills = [
@@ -43,6 +43,17 @@ const projects = [
     mark: 'S / I',
     Icon: Globe2,
     features: ['Django backend', 'Responsive frontend', 'SQLite database'],
+  },
+  {
+    number: '04',
+    name: 'A Circle Of Care',
+    category: 'AI · Django project',
+    stack: 'Python / Django / Gemini API / HTML / CSS / JavaScript',
+    description: 'An AI-powered family communication platform designed to provide feedback, chatbot assistance, and supportive suggestions.',
+    accent: 'care',
+    mark: 'C / C',
+    Icon: HeartHandshake,
+    features: ['AI chatbot', 'Family feedback', 'Supportive suggestions'],
   },
 ]
 
@@ -100,7 +111,7 @@ function App() {
         <section className="proof-strip" aria-label="Highlights">
           <div className="proof-inner page-wrap">
             <div><strong>91.88<span>%</span></strong><small>Diploma score</small></div>
-            <div><strong>03</strong><small>Projects built</small></div>
+            <div><strong>{String(projects.length).padStart(2, '0')}</strong><small>Projects built</small></div>
             <div><strong>02</strong><small>Mobile apps</small></div>
             <div className="proof-note">A practical foundation.<br />A lot still to discover.</div>
           </div>
@@ -126,7 +137,7 @@ function App() {
                     <span className="visual-corner">PROJECT<br />{project.number}</span>
                   </div>
                   <div className="project-info">
-                    <div className="project-meta"><span>{project.category}</span><span>{project.number} / 03</span></div>
+                    <div className="project-meta"><span>{project.category}</span><span>{project.number} / {String(projects.length).padStart(2, '0')}</span></div>
                     <h3>{project.name}</h3>
                     <p className="project-stack">{project.stack}</p>
                     <p className="project-description">{project.description}</p>
